@@ -12,6 +12,11 @@ import java.io.Serializable;
  */
 public class DoubleCheckMode implements Serializable {
 
+    /**
+     * 正确的双重检查锁定模式需要需要使用 volatile。volatile主要包含两个功能
+     * 1、保证可见性。使用 volatile 定义的变量，将会保证对所有线程的可见性
+     * 2、禁止指令重排序优化
+     */
     private static volatile DoubleCheckMode doubleCheckMode;
 
     private DoubleCheckMode() {
