@@ -32,10 +32,16 @@ public class DoubleCheckMode implements Serializable {
      * @return
      */
     public static DoubleCheckMode getInstance() {
+        //优化：
+        //可以看到方法内部使用局部变量，首先将实例变量值赋值给该局部变量，然后再进行判断。最后内容先写入局部变量，然后再将局部变量赋值给实例变量。
+        //使用局部变量相对于不使用局部变量，可以提高性能。主要是由于 volatile 变量创建对象时需要禁止指令重排序，这就需要一些额外的操作。
+        DoubleCheckMode doubleCheckMode = DoubleCheckMode.doubleCheckMode;
         if (doubleCheckMode == null) {
             synchronized (DoubleCheckMode.class) {
+                doubleCheckMode = DoubleCheckMode.doubleCheckMode;
                 if (doubleCheckMode == null) {
                     doubleCheckMode = new DoubleCheckMode();
+                    DoubleCheckMode.doubleCheckMode = doubleCheckMode;
                 }
             }
         }
