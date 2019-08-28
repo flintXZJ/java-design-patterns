@@ -1,4 +1,4 @@
-package com.xzj.stu.design;
+package com.xzj.stu.design.createdmodel.singletonpattern;
 
 import com.xzj.stu.design.structuredmodel.adapterpattern.one.WildCock;
 
