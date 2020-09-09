@@ -26,7 +26,7 @@ public class ReflectionBreakSingleton {
         System.out.println(h2);
     }
 
-//    解决以上漏洞的方法:
+//    解决以上漏洞的方法: 没解决啊？？？
 //    private Singleton() {
 //        //在构造器中加个逻辑判断,多次调用抛出异常
 //        if(instance!= null){

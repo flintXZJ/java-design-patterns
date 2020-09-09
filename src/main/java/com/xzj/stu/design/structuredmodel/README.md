@@ -8,6 +8,7 @@
     > * 2、和装饰器模式的区别：装饰器模式为了增强功能，而代理模式是为了加以控制
     > * UML图![UML图](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1552910182076&di=bed17367981b921d975500389dcd2bde&imgtype=0&src=http%3A%2F%2Fww1.sinaimg.cn%2Flarge%2F006rMFVegy1fdpnfxbh3oj30j60ayglq.jpg)
 2. 适配器模式（Adapter Pattern）
+org.apache.dubbo.remoting.transport.netty4.NettyCodecAdapter
     > * 1、类适配和对象适配的异同：
     > * > 一个采用继承，一个采用组合；
     > * > 类适配属于静态实现，对象适配属于组合的动态实现，对象适配需要多实例化一个对象。

@@ -14,7 +14,7 @@
     > * UML图![UML图](http://www.runoob.com/wp-content/uploads/2018/07/1530601916-7298-DP-AbstractFactory.png)
 4. 单例模式（Singleton Pattern）
     > * 某个类只能有一个实例，提供一个全局的访问点
-5. 建造者模式（Builder Pattern）
+5. 建造者模式（Builder Pattern）-构造器模式
     > * 封装一个复杂对象的构建过程，并可以按步骤构造
 6. 原型模式（Prototype Pattern）
     > * 通过复制现有的实例来创建新的实例
